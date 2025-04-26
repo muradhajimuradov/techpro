@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="bg-grey-bright">
+    <header class="light-header">
+      <div
+        class="container d-flex d-flex-row d-flex-justify-content-between menu"
+      >
+        <ul
+          class="d-flex d-flex-row gap-20px align-items-center list-style-none p-0"
+        >
+          <li>
+            <a href="">
+              <img src="assets/images/red-logo.svg" alt="" class="logo" />
+            </a>
+          </li>
+          <li class="has-dropdown">
+            <a class="menu-item text-decoration-none red-main" href=""
+              >About us</a
+            >
+            <ul class="dropdown-menu">
+              <li>
+                <a
+                  class="menu-item grey-bright text-decoration-none mt-10px mb-10px"
+                  href=""
+                  >Career</a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu-item grey-bright text-decoration-none mb-10px"
+                  href=""
+                  >Policies</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="menu-item text-decoration-none red-main" href=""
+              >Vendors</a
+            >
+          </li>
+          <li>
+            <a class="menu-item text-decoration-none red-main" href="">News</a>
+          </li>
+        </ul>
+        <div class="d-flex flex-row gap-30px align-items-center">
+          <div class="d-flex flex-row gap-10px">
+            <a href="">
+              <img
+                src="assets/images/red-instagram.svg"
+                alt=""
+                class="social-icon"
+              />
+            </a>
+            <a href="">
+              <img
+                src="assets/images/red-linkedin.svg"
+                alt=""
+                class="social-icon"
+              />
+            </a>
+          </div>
+          <div class="language-dropdown">
+            <div
+              class="active-language d-flex d-flex-row gap-5px align-items-center"
+            >
+              <img src="assets/images/red-lang.svg" alt="" />
+              <div class="menu red-main">En</div>
+            </div>
+          </div>
+          <a
+            href=""
+            class="menu red-main text-decoration-none portal red-portal"
+            >Portal</a
+          >
+          <button class="border-none p-0 m-0 bg-none">
+            <img
+              class="burger-icon"
+              src="assets/images/red_burger_menu.svg"
+              alt=""
+            />
+          </button>
+        </div>
+      </div>
+    </header>
+    <div modal class="modal-form">
+      <div class="d-flex d-flex-row d-flex-justify-content-between mb-30px">
+        <div class="h-2 grey-bright">Become a partner</div>
+        <button close-form class="border-none bg-none p-0 m-0">
+          <img class="close-logo" src="assets/images/close.svg" alt="" />
+        </button>
+      </div>
+      <form class="d-flex d-flex-column gap-15px" action="">
+        <div class="modal-form-group">
+          <label class="d-flex grey-bright major" for="">Company name</label>
+          <input class="simple" type="text" name="" id="" />
+        </div>
+        <div class="modal-form-group">
+          <label class="d-flex grey-bright major" for=""
+            >Partnership type</label
+          >
+          <select class="simple" name="" id="">
+            <option value="">Sales</option>
+          </select>
+        </div>
+        <button
+          class="major grey-bright bg-red-main red-big-button"
+          type="submit"
+        >
+          Submit
+        </button>
+      </form>
+    </div>
+    <section
+      class="container-fluid first-section-margin position-relative"
+      style="background: url(assets/images/bg4k.png) no-repeat center top/cover"
+    >
+      <img src="assets/images/union-white.png" class="union" />
+      <img src="assets/images/union-2.png" alt="" class="union-2" />
+      <div class="container">
+        <h1 class="max line-height-125 black-main text-center mt-50px mb-73px">
+          Vacancies
+        </h1>
+        <div
+          class="d-flex d-flex-row d-flex-justify-content-center gap-10px d-flex-wrap mb-102px ms-50px me-50px"
+        >
+          <div class="cat">
+            <input checked type="radio" name="cat" id="cat-0" value="all" />
+            <label for="cat-0">All</label>
+          </div>
+          <div class="cat">
+            <input type="radio" name="cat" id="cat-1" value="cat-1" />
+            <label for="cat-1">Marketing</label>
+          </div>
+          <div class="cat">
+            <input type="radio" name="cat" id="cat-2" value="cat-2" />
+            <label for="cat-2">Sales</label>
+          </div>
+        </div>
+        <div class="d-flex d-flex-column gap-30px mb-100px">
+          <div
+            class="filter-item vacancy-row"
+            cat="cat-2"
+            title="Head of sales department"
+          >
+            <div class="h-2 black-main">Head of sales department</div>
+            <div class="d-flex d-flex-row gap-16px">
+              <div class="vacancy-frame">
+                <svg
+                  width="15"
+                  height="16"
+                  viewBox="0 0 15 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_512_3616)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.98281 1.45531C7.82215 1.44345 7.6611 1.43751 7.5 1.4375V0.5C7.68425 0.50009 7.86844 0.50697 8.05219 0.520625L7.98281 1.45531ZM9.86156 1.87719C9.56104 1.76122 9.2524 1.66753 8.93813 1.59688L9.14344 0.681875C9.5025 0.7625 9.85594 0.869375 10.1991 1.0025L9.86156 1.87719ZM11.1459 2.54281C11.0119 2.45342 10.8746 2.36899 10.7344 2.28969L11.1966 1.47406C11.5171 1.65569 11.8239 1.86062 12.1144 2.08719L11.5378 2.82688C11.4107 2.72772 11.28 2.63328 11.1459 2.54375V2.54281ZM12.8653 4.22094C12.6799 3.95748 12.4753 3.70805 12.2531 3.47469L12.9319 2.82781C13.185 3.095 13.4194 3.38094 13.6322 3.68094L12.8653 4.22094ZM13.5628 5.48844C13.5013 5.33981 13.4344 5.19346 13.3622 5.04969L14.1994 4.62781C14.3649 4.95695 14.5059 5.29788 14.6212 5.64781L13.7306 5.94125C13.6802 5.78831 13.6243 5.63727 13.5628 5.48844ZM14.0597 7.83875C14.0521 7.51657 14.0208 7.19538 13.9659 6.87781L14.8894 6.71844C14.9522 7.08031 14.9887 7.44781 14.9981 7.81531L14.0606 7.83875H14.0597ZM13.9369 9.28063C13.9678 9.12125 13.9931 8.96281 14.0128 8.8025L14.9437 8.91781C14.8987 9.28358 14.8266 9.64551 14.7281 10.0006L13.8244 9.75031C13.8675 9.59562 13.905 9.43906 13.9369 9.28063ZM13.0444 11.5109C13.2169 11.2391 13.3687 10.9541 13.5 10.6597L14.3569 11.0394C14.2069 11.3769 14.0334 11.7013 13.8366 12.0125L13.0444 11.5109ZM12.1406 12.6406C12.255 12.5263 12.3647 12.4081 12.4688 12.2863L13.1794 12.8984C13.059 13.038 12.9336 13.1731 12.8034 13.3034L12.1406 12.6406Z"
+                      fill="#171717"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.5 1.4375C6.42082 1.43758 5.35832 1.70379 4.4066 2.21257C3.45488 2.72134 2.64332 3.45697 2.0438 4.3543C1.44428 5.25162 1.07531 6.28295 0.969556 7.35693C0.863806 8.43091 1.02455 9.5144 1.43754 10.5114C1.85053 11.5084 2.50303 12.3882 3.33724 13.0729C4.17145 13.7575 5.16163 14.2258 6.22006 14.4364C7.2785 14.6469 8.37252 14.5932 9.40524 14.28C10.438 13.9668 11.3775 13.4037 12.1406 12.6406L12.8034 13.3034C11.9313 14.176 10.8574 14.8201 9.67691 15.1784C8.4964 15.5368 7.24572 15.5985 6.03568 15.358C4.82565 15.1174 3.69361 14.5822 2.73989 13.7996C1.78616 13.017 1.04019 12.0113 0.568062 10.8715C0.0959366 9.73166 -0.087764 8.49301 0.0332371 7.26525C0.154238 6.03749 0.576205 4.85853 1.26175 3.83283C1.94729 2.80713 2.87525 1.96635 3.9634 1.385C5.05155 0.803652 6.26629 0.499673 7.5 0.5V1.4375Z"
+                      fill="#171717"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.03125 3.3125C7.15557 3.3125 7.2748 3.36189 7.36271 3.44979C7.45061 3.5377 7.5 3.65693 7.5 3.78125V8.66562L10.545 10.4056C10.6498 10.4688 10.7257 10.5706 10.7565 10.689C10.7873 10.8075 10.7706 10.9333 10.7099 11.0396C10.6491 11.1458 10.5492 11.2241 10.4315 11.2577C10.3139 11.2913 10.1877 11.2776 10.08 11.2194L6.79875 9.34437C6.72701 9.30339 6.66737 9.24418 6.62588 9.17272C6.58439 9.10127 6.56253 9.02012 6.5625 8.9375V3.78125C6.5625 3.65693 6.61189 3.5377 6.69979 3.44979C6.7877 3.36189 6.90693 3.3125 7.03125 3.3125Z"
+                      fill="#171717"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_512_3616">
+                      <rect
+                        width="15"
+                        height="15"
+                        fill="white"
+                        transform="translate(0 0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                <div class="menu-item">Full time</div>
+              </div>
+              <div class="vacancy-frame">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_512_1403)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.249 13.41C19.044 11.8005 19.5 10.293 19.5 9C19.5 7.01088 18.7098 5.10322 17.3033 3.6967C15.8968 2.29018 13.9891 1.5 12 1.5C10.0109 1.5 8.10322 2.29018 6.6967 3.6967C5.29018 5.10322 4.5 7.01088 4.5 9C4.5 10.293 4.9575 11.8005 5.751 13.41C6.537 15.003 7.602 16.59 8.691 18.015C9.72403 19.3584 10.8286 20.6453 12 21.87L12.312 21.54C13.368 20.4147 14.3682 19.2382 15.309 18.015C16.398 16.59 17.463 15.003 18.249 13.41ZM12 24C12 24 21 15.471 21 9C21 6.61305 20.0518 4.32387 18.364 2.63604C16.6761 0.948211 14.3869 0 12 0C9.61305 0 7.32387 0.948211 5.63604 2.63604C3.94821 4.32387 3 6.61305 3 9C3 15.471 12 24 12 24Z"
+                      fill="#4A4A4A"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 12C12.7956 12 13.5587 11.6839 14.1213 11.1213C14.6839 10.5587 15 9.79565 15 9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9C9 9.79565 9.31607 10.5587 9.87868 11.1213C10.4413 11.6839 11.2044 12 12 12ZM12 13.5C13.1935 13.5 14.3381 13.0259 15.182 12.182C16.0259 11.3381 16.5 10.1935 16.5 9C16.5 7.80653 16.0259 6.66193 15.182 5.81802C14.3381 4.97411 13.1935 4.5 12 4.5C10.8065 4.5 9.66193 4.97411 8.81802 5.81802C7.97411 6.66193 7.5 7.80653 7.5 9C7.5 10.1935 7.97411 11.3381 8.81802 12.182C9.66193 13.0259 10.8065 13.5 12 13.5Z"
+                      fill="#4A4A4A"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_512_1403">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                <div class="menu-item">Baku</div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="filter-item vacancy-row"
+            cat="cat-1"
+            title="Head of sales department"
+          >
+            <div class="h-2 black-main">Head of sales department</div>
+            <div class="d-flex d-flex-row gap-16px">
+              <div class="vacancy-frame">
+                <svg
+                  width="15"
+                  height="16"
+                  viewBox="0 0 15 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_512_3616)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.98281 1.45531C7.82215 1.44345 7.6611 1.43751 7.5 1.4375V0.5C7.68425 0.50009 7.86844 0.50697 8.05219 0.520625L7.98281 1.45531ZM9.86156 1.87719C9.56104 1.76122 9.2524 1.66753 8.93813 1.59688L9.14344 0.681875C9.5025 0.7625 9.85594 0.869375 10.1991 1.0025L9.86156 1.87719ZM11.1459 2.54281C11.0119 2.45342 10.8746 2.36899 10.7344 2.28969L11.1966 1.47406C11.5171 1.65569 11.8239 1.86062 12.1144 2.08719L11.5378 2.82688C11.4107 2.72772 11.28 2.63328 11.1459 2.54375V2.54281ZM12.8653 4.22094C12.6799 3.95748 12.4753 3.70805 12.2531 3.47469L12.9319 2.82781C13.185 3.095 13.4194 3.38094 13.6322 3.68094L12.8653 4.22094ZM13.5628 5.48844C13.5013 5.33981 13.4344 5.19346 13.3622 5.04969L14.1994 4.62781C14.3649 4.95695 14.5059 5.29788 14.6212 5.64781L13.7306 5.94125C13.6802 5.78831 13.6243 5.63727 13.5628 5.48844ZM14.0597 7.83875C14.0521 7.51657 14.0208 7.19538 13.9659 6.87781L14.8894 6.71844C14.9522 7.08031 14.9887 7.44781 14.9981 7.81531L14.0606 7.83875H14.0597ZM13.9369 9.28063C13.9678 9.12125 13.9931 8.96281 14.0128 8.8025L14.9437 8.91781C14.8987 9.28358 14.8266 9.64551 14.7281 10.0006L13.8244 9.75031C13.8675 9.59562 13.905 9.43906 13.9369 9.28063ZM13.0444 11.5109C13.2169 11.2391 13.3687 10.9541 13.5 10.6597L14.3569 11.0394C14.2069 11.3769 14.0334 11.7013 13.8366 12.0125L13.0444 11.5109ZM12.1406 12.6406C12.255 12.5263 12.3647 12.4081 12.4688 12.2863L13.1794 12.8984C13.059 13.038 12.9336 13.1731 12.8034 13.3034L12.1406 12.6406Z"
+                      fill="#171717"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.5 1.4375C6.42082 1.43758 5.35832 1.70379 4.4066 2.21257C3.45488 2.72134 2.64332 3.45697 2.0438 4.3543C1.44428 5.25162 1.07531 6.28295 0.969556 7.35693C0.863806 8.43091 1.02455 9.5144 1.43754 10.5114C1.85053 11.5084 2.50303 12.3882 3.33724 13.0729C4.17145 13.7575 5.16163 14.2258 6.22006 14.4364C7.2785 14.6469 8.37252 14.5932 9.40524 14.28C10.438 13.9668 11.3775 13.4037 12.1406 12.6406L12.8034 13.3034C11.9313 14.176 10.8574 14.8201 9.67691 15.1784C8.4964 15.5368 7.24572 15.5985 6.03568 15.358C4.82565 15.1174 3.69361 14.5822 2.73989 13.7996C1.78616 13.017 1.04019 12.0113 0.568062 10.8715C0.0959366 9.73166 -0.087764 8.49301 0.0332371 7.26525C0.154238 6.03749 0.576205 4.85853 1.26175 3.83283C1.94729 2.80713 2.87525 1.96635 3.9634 1.385C5.05155 0.803652 6.26629 0.499673 7.5 0.5V1.4375Z"
+                      fill="#171717"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.03125 3.3125C7.15557 3.3125 7.2748 3.36189 7.36271 3.44979C7.45061 3.5377 7.5 3.65693 7.5 3.78125V8.66562L10.545 10.4056C10.6498 10.4688 10.7257 10.5706 10.7565 10.689C10.7873 10.8075 10.7706 10.9333 10.7099 11.0396C10.6491 11.1458 10.5492 11.2241 10.4315 11.2577C10.3139 11.2913 10.1877 11.2776 10.08 11.2194L6.79875 9.34437C6.72701 9.30339 6.66737 9.24418 6.62588 9.17272C6.58439 9.10127 6.56253 9.02012 6.5625 8.9375V3.78125C6.5625 3.65693 6.61189 3.5377 6.69979 3.44979C6.7877 3.36189 6.90693 3.3125 7.03125 3.3125Z"
+                      fill="#171717"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_512_3616">
+                      <rect
+                        width="15"
+                        height="15"
+                        fill="white"
+                        transform="translate(0 0.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                <div class="menu-item">Full time</div>
+              </div>
+              <div class="vacancy-frame">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_512_1403)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M18.249 13.41C19.044 11.8005 19.5 10.293 19.5 9C19.5 7.01088 18.7098 5.10322 17.3033 3.6967C15.8968 2.29018 13.9891 1.5 12 1.5C10.0109 1.5 8.10322 2.29018 6.6967 3.6967C5.29018 5.10322 4.5 7.01088 4.5 9C4.5 10.293 4.9575 11.8005 5.751 13.41C6.537 15.003 7.602 16.59 8.691 18.015C9.72403 19.3584 10.8286 20.6453 12 21.87L12.312 21.54C13.368 20.4147 14.3682 19.2382 15.309 18.015C16.398 16.59 17.463 15.003 18.249 13.41ZM12 24C12 24 21 15.471 21 9C21 6.61305 20.0518 4.32387 18.364 2.63604C16.6761 0.948211 14.3869 0 12 0C9.61305 0 7.32387 0.948211 5.63604 2.63604C3.94821 4.32387 3 6.61305 3 9C3 15.471 12 24 12 24Z"
+                      fill="#4A4A4A"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 12C12.7956 12 13.5587 11.6839 14.1213 11.1213C14.6839 10.5587 15 9.79565 15 9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9C9 9.79565 9.31607 10.5587 9.87868 11.1213C10.4413 11.6839 11.2044 12 12 12ZM12 13.5C13.1935 13.5 14.3381 13.0259 15.182 12.182C16.0259 11.3381 16.5 10.1935 16.5 9C16.5 7.80653 16.0259 6.66193 15.182 5.81802C14.3381 4.97411 13.1935 4.5 12 4.5C10.8065 4.5 9.66193 4.97411 8.81802 5.81802C7.97411 6.66193 7.5 7.80653 7.5 9C7.5 10.1935 7.97411 11.3381 8.81802 12.182C9.66193 13.0259 10.8065 13.5 12 13.5Z"
+                      fill="#4A4A4A"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_512_1403">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+
+                <div class="menu-item">Baku</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vendor-modal">
+        <div
+          class="container d-flex d-flex-column d-flex-justify-content-center align-items-center"
+        >
+          <div class="vendor-full-details container">
+            <button class="close-vendor">
+              <img src="assets/images/close.svg" alt="" />
+            </button>
+            <div class="d-flex d-flex-column w-100">
+              <div class="h-1 line-height-200 white mb-10px">
+                Head of sales department
+              </div>
+              <p class="h-3 mb-20px white mb-10px">
+                Vacancy expires: <span class="h-2 white">20.20.2020</span>
+              </p>
+              <div class="d-flex d-flex-row gap-16px detailed-vacancy mb-57px">
+                <div class="vacancy-frame">
+                  <svg
+                    width="15"
+                    height="16"
+                    viewBox="0 0 15 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_512_3616)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.98281 1.45531C7.82215 1.44345 7.6611 1.43751 7.5 1.4375V0.5C7.68425 0.50009 7.86844 0.50697 8.05219 0.520625L7.98281 1.45531ZM9.86156 1.87719C9.56104 1.76122 9.2524 1.66753 8.93813 1.59688L9.14344 0.681875C9.5025 0.7625 9.85594 0.869375 10.1991 1.0025L9.86156 1.87719ZM11.1459 2.54281C11.0119 2.45342 10.8746 2.36899 10.7344 2.28969L11.1966 1.47406C11.5171 1.65569 11.8239 1.86062 12.1144 2.08719L11.5378 2.82688C11.4107 2.72772 11.28 2.63328 11.1459 2.54375V2.54281ZM12.8653 4.22094C12.6799 3.95748 12.4753 3.70805 12.2531 3.47469L12.9319 2.82781C13.185 3.095 13.4194 3.38094 13.6322 3.68094L12.8653 4.22094ZM13.5628 5.48844C13.5013 5.33981 13.4344 5.19346 13.3622 5.04969L14.1994 4.62781C14.3649 4.95695 14.5059 5.29788 14.6212 5.64781L13.7306 5.94125C13.6802 5.78831 13.6243 5.63727 13.5628 5.48844ZM14.0597 7.83875C14.0521 7.51657 14.0208 7.19538 13.9659 6.87781L14.8894 6.71844C14.9522 7.08031 14.9887 7.44781 14.9981 7.81531L14.0606 7.83875H14.0597ZM13.9369 9.28063C13.9678 9.12125 13.9931 8.96281 14.0128 8.8025L14.9437 8.91781C14.8987 9.28358 14.8266 9.64551 14.7281 10.0006L13.8244 9.75031C13.8675 9.59562 13.905 9.43906 13.9369 9.28063ZM13.0444 11.5109C13.2169 11.2391 13.3687 10.9541 13.5 10.6597L14.3569 11.0394C14.2069 11.3769 14.0334 11.7013 13.8366 12.0125L13.0444 11.5109ZM12.1406 12.6406C12.255 12.5263 12.3647 12.4081 12.4688 12.2863L13.1794 12.8984C13.059 13.038 12.9336 13.1731 12.8034 13.3034L12.1406 12.6406Z"
+                        fill="#171717"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.5 1.4375C6.42082 1.43758 5.35832 1.70379 4.4066 2.21257C3.45488 2.72134 2.64332 3.45697 2.0438 4.3543C1.44428 5.25162 1.07531 6.28295 0.969556 7.35693C0.863806 8.43091 1.02455 9.5144 1.43754 10.5114C1.85053 11.5084 2.50303 12.3882 3.33724 13.0729C4.17145 13.7575 5.16163 14.2258 6.22006 14.4364C7.2785 14.6469 8.37252 14.5932 9.40524 14.28C10.438 13.9668 11.3775 13.4037 12.1406 12.6406L12.8034 13.3034C11.9313 14.176 10.8574 14.8201 9.67691 15.1784C8.4964 15.5368 7.24572 15.5985 6.03568 15.358C4.82565 15.1174 3.69361 14.5822 2.73989 13.7996C1.78616 13.017 1.04019 12.0113 0.568062 10.8715C0.0959366 9.73166 -0.087764 8.49301 0.0332371 7.26525C0.154238 6.03749 0.576205 4.85853 1.26175 3.83283C1.94729 2.80713 2.87525 1.96635 3.9634 1.385C5.05155 0.803652 6.26629 0.499673 7.5 0.5V1.4375Z"
+                        fill="#171717"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M7.03125 3.3125C7.15557 3.3125 7.2748 3.36189 7.36271 3.44979C7.45061 3.5377 7.5 3.65693 7.5 3.78125V8.66562L10.545 10.4056C10.6498 10.4688 10.7257 10.5706 10.7565 10.689C10.7873 10.8075 10.7706 10.9333 10.7099 11.0396C10.6491 11.1458 10.5492 11.2241 10.4315 11.2577C10.3139 11.2913 10.1877 11.2776 10.08 11.2194L6.79875 9.34437C6.72701 9.30339 6.66737 9.24418 6.62588 9.17272C6.58439 9.10127 6.56253 9.02012 6.5625 8.9375V3.78125C6.5625 3.65693 6.61189 3.5377 6.69979 3.44979C6.7877 3.36189 6.90693 3.3125 7.03125 3.3125Z"
+                        fill="#171717"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_512_3616">
+                        <rect
+                          width="15"
+                          height="15"
+                          fill="white"
+                          transform="translate(0 0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <div class="menu-item">Full time</div>
+                </div>
+                <div class="vacancy-frame">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_512_1403)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M18.249 13.41C19.044 11.8005 19.5 10.293 19.5 9C19.5 7.01088 18.7098 5.10322 17.3033 3.6967C15.8968 2.29018 13.9891 1.5 12 1.5C10.0109 1.5 8.10322 2.29018 6.6967 3.6967C5.29018 5.10322 4.5 7.01088 4.5 9C4.5 10.293 4.9575 11.8005 5.751 13.41C6.537 15.003 7.602 16.59 8.691 18.015C9.72403 19.3584 10.8286 20.6453 12 21.87L12.312 21.54C13.368 20.4147 14.3682 19.2382 15.309 18.015C16.398 16.59 17.463 15.003 18.249 13.41ZM12 24C12 24 21 15.471 21 9C21 6.61305 20.0518 4.32387 18.364 2.63604C16.6761 0.948211 14.3869 0 12 0C9.61305 0 7.32387 0.948211 5.63604 2.63604C3.94821 4.32387 3 6.61305 3 9C3 15.471 12 24 12 24Z"
+                        fill="#4A4A4A"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 12C12.7956 12 13.5587 11.6839 14.1213 11.1213C14.6839 10.5587 15 9.79565 15 9C15 8.20435 14.6839 7.44129 14.1213 6.87868C13.5587 6.31607 12.7956 6 12 6C11.2044 6 10.4413 6.31607 9.87868 6.87868C9.31607 7.44129 9 8.20435 9 9C9 9.79565 9.31607 10.5587 9.87868 11.1213C10.4413 11.6839 11.2044 12 12 12ZM12 13.5C13.1935 13.5 14.3381 13.0259 15.182 12.182C16.0259 11.3381 16.5 10.1935 16.5 9C16.5 7.80653 16.0259 6.66193 15.182 5.81802C14.3381 4.97411 13.1935 4.5 12 4.5C10.8065 4.5 9.66193 4.97411 8.81802 5.81802C7.97411 6.66193 7.5 7.80653 7.5 9C7.5 10.1935 7.97411 11.3381 8.81802 12.182C9.66193 13.0259 10.8065 13.5 12 13.5Z"
+                        fill="#4A4A4A"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_512_1403">
+                        <rect width="24" height="24" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+
+                  <div class="menu-item">Baku</div>
+                </div>
+              </div>
+              <div class="two-column-flex">
+                <div class="column-item vacancy-body">
+                  <h3 class="h-2 mb-20px white">Candidate requirements</h3>
+                  <div class="white-text v-text">
+                    <p><b>Higher Education</b></p>
+
+                    <p><b>Experience:</b></p>
+                    <ul>
+                      <li>
+                        0+ Background in IT or Business/Economics with IT
+                        Background
+                      </li>
+                    </ul>
+
+                    <p><b>Computer Skills:</b></p>
+                    <ul>
+                      <li>Excel, Word, Outlook, and PowerPoint</li>
+                    </ul>
+
+                    <p><b>Languages:</b></p>
+                    <ul>
+                      <li>Azeri: Excellent</li>
+                      <li>Russian: Excellent</li>
+                      <li>
+                        English: Upper Intermediate or better in written and
+                        oral
+                      </li>
+                      <li>Additional languages are beneficial</li>
+                    </ul>
+
+                    <p><b>Key Goals:</b></p>
+                    <ul>
+                      <li>
+                        First point of contact between world-leading vendors and
+                        local partners
+                      </li>
+                      <li>
+                        Promoting products, solutions, and services from the
+                        portfolio to local partners
+                      </li>
+                      <li>
+                        Market analysis and development of sales expansion
+                      </li>
+                      <li>
+                        Assessment of potential customers, partners, and
+                        competitors
+                      </li>
+                    </ul>
+
+                    <p><b>Responsibilities:</b></p>
+                    <ul>
+                      <li>Continuous business review with the team leader</li>
+                      <li>
+                        Identification of opportunities for the company's
+                        services/solutions by negotiating with partners and
+                        customers via phone, email, and meetings
+                      </li>
+                      <li>
+                        Building strong, long-lasting partner relationships
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="column-item">
+                  <h3 class="h-2 mb-20px white">Apply</h3>
+                  <form class="d-flex d-flex-column gap-19px" action="">
+                    <div class="form-group">
+                      <label class="major grey-100 d-flex" for=""
+                        >Name Surname</label
+                      >
+                      <input class="simple" type="text" name="" id="" />
+                    </div>
+                    <div class="form-group">
+                      <label class="major grey-100 d-flex" for="phone"
+                        >Phone</label
+                      >
+                      <div class="phone-input">
+                        <select class="simple" name="" id="">
+                          <option value="99450">+994 50</option>
+                          <option value="99451">+994 51</option>
+                          <option value="99455">+994 55</option>
+                          <option value="99460">+994 60</option>
+                          <option value="99470">+994 70</option>
+                          <option value="99477">+994 77</option>
+                          <option value="99499">+994 99</option>
+                        </select>
+                        <input
+                          class="simple"
+                          type="tel"
+                          name=""
+                          id=""
+                          pattern="[0-9]{7}"
+                          minlength="7"
+                          maxlength="7"
+                          placeholder="1234567"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="major grey-100 d-flex" for="">Email</label>
+                      <input class="simple" type="email" name="" id="" />
+                    </div>
+                    <div class="form-group">
+                      <label class="major grey-100 d-flex" for=""
+                        >Upload your CV</label
+                      >
+                      <div class="file-upload">
+                        <label
+                          class="d-flex d-flex-column d-flex-justify-content-center d-flex-align-items-center cursor-pointer"
+                          for="file"
+                        >
+                          <img
+                            class="mb-10px"
+                            src="assets/images/cloud-download.svg"
+                            alt=""
+                          />
+                          <div class="simple grey-100 mb-13px">Click here to upload or drop files here</div>
+                          <div class="simple grey-100">Max file size 50 mb</div>
+                          <div class="filename simple red-main"></div>
+                        </label>
+                        <input class="d-none" type="file" name="file" id="file" />
+                      </div>
+                      <script>
+                        document.getElementById('file').addEventListener('change', function(event) {
+                          const file = event.target.files[0];
+                          const filenameElement = document.querySelector('.filename');
+                          if (file) {
+                            if (file.size > 50 * 1024 * 1024) { // 50 MB in bytes
+                              alert('File size exceeds 50 MB. Please upload a smaller file.');
+                              event.target.value = ''; // Clear the input
+                              filenameElement.textContent = ''; // Clear the filename display
+                            } else {
+                              filenameElement.textContent = file.name; // Display the file name
+                            }
+                          }
+                        });
+                      </script>
+                      <button
+                        class="major grey-bright bg-red-main red-big-button"
+                        type="submit"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="container-fluid contacts-section"
+      style="
+        background: url(assets/images/bottom_back.png) no-repeat center
+            top/cover,
+          var(--black-bright);
+      "
+    >
+      <div
+        class="container d-flex d-flex-column position-relative pb-100px mt-88px"
+      >
+        <div
+          class="position-absolute w-100 top-0 left-0 right-0 d-flex h-100"
+          style="
+            background: url(assets/images/big-t-bottom.png) no-repeat center
+              top/cover;
+            opacity: 0.5;
+            margin-top: 1rem;
+            z-index: 0;
+          "
+        ></div>
+        <div class="position-relative d-flex justify-content-center mb-47px">
+          <div class="h-1 grey-bright text-center w-100 container">
+            Contact Us
+          </div>
+        </div>
+        <div class="d-flex d-flex-row gap-63px" style="z-index: 2">
+          <div class="contact-info">
+            <div class="contact-row">
+              <img src="assets/images/geo-alt.svg" alt="" />
+              <div class="d-flex d-flex-column gap-5px">
+                <div class="gilroy-bold">Head Office</div>
+                <div class="gilroy-regular">
+                  73a Langley Park Road Sutton, SM2 5HA, United Kingdom 
+                </div>
+              </div>
+            </div>
+            <div class="contact-row">
+              <img src="assets/images/geo-alt.svg" alt="" />
+              <div class="d-flex d-flex-column gap-5px">
+                <div class="gilroy-bold">Head Office</div>
+                <div class="gilroy-regular">
+                  73a Langley Park Road Sutton, SM2 5HA, United Kingdom 
+                </div>
+              </div>
+            </div>
+            <div class="contact-row">
+              <img src="assets/images/geo-alt.svg" alt="" />
+              <div class="d-flex d-flex-column gap-5px">
+                <div class="gilroy-bold">Head Office</div>
+                <div class="gilroy-regular">
+                  73a Langley Park Road Sutton, SM2 5HA, United Kingdom 
+                </div>
+              </div>
+            </div>
+            <div class="contact-row">
+              <img class="my-auto" src="assets/images/telephone.svg" alt="" />
+              <div class="d-flex d-flex-column gap-5px">
+                <div class="gilroy-bold">Telefon</div>
+                <div class="gilroy-regular">+994 55 213 13 45</div>
+                <div class="gilroy-regular">+994 55 213 13 45</div>
+                <div class="gilroy-regular">+994 55 213 13 45</div>
+              </div>
+            </div>
+            <img class="maps-image" src="assets/images/maps.png" alt="" />
+            <div class="custom-contact-block">
+              <div class="h-2 contact-info-title grey-100 mb-10px">
+                Contact our sales team:
+              </div>
+              <div class="custom-contact-row">
+                <img src="assets/images/envelope.svg" alt="" />
+                <div>sales@techpro.az</div>
+              </div>
+              <div class="custom-contact-row">
+                <img src="assets/images/telephone.svg" alt="" />
+                <div>9379992</div>
+              </div>
+            </div>
+            <div class="custom-contact-block">
+              <div class="h-2 contact-info-title grey-100 mb-10px">
+                Contact our sales team:
+              </div>
+              <div class="custom-contact-row">
+                <img src="assets/images/envelope.svg" alt="" />
+                <div>sales@techpro.az</div>
+              </div>
+              <div class="custom-contact-row">
+                <img src="assets/images/telephone.svg" alt="" />
+                <div>9379992</div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form">
+            <form class="d-flex d-flex-column gap-19px mb-50px" action="">
+              <div class="h-2 grey-100">Get in touch</div>
+              <div class="form-group">
+                <label class="major grey-100 d-flex" for="name">Name</label>
+                <input
+                  class="simple"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Name"
+                />
+              </div>
+              <div class="form-group">
+                <label class="major grey-100 d-flex" for="comp"
+                  >Company Name</label
+                >
+                <input
+                  class="simple"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Company name"
+                />
+              </div>
+              <div class="form-group">
+                <label class="major grey-100 d-flex" for="phone">Phone</label>
+                <div class="phone-input">
+                  <select class="simple" name="" id="">
+                    <option value="99450">+994 50</option>
+                    <option value="99451">+994 51</option>
+                    <option value="99455">+994 55</option>
+                    <option value="99460">+994 60</option>
+                    <option value="99470">+994 70</option>
+                    <option value="99477">+994 77</option>
+                    <option value="99499">+994 99</option>
+                  </select>
+                  <input
+                    class="simple"
+                    type="tel"
+                    name=""
+                    id=""
+                    pattern="[0-9]{7}"
+                    minlength="7"
+                    maxlength="7"
+                    placeholder="1234567"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="major grey-100 d-flex" for="email">Email</label>
+                <input
+                  class="simple"
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="Email"
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  class="simple"
+                  name=""
+                  id=""
+                  placeholder="message"
+                ></textarea>
+                <span class="d-flex gilroy fs-12px grey-600"
+                  >Max 200 characters</span
+                >
+              </div>
+              <button
+                class="major grey-bright bg-red-main red-big-button"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+            <form class="d-flex d-flex-column" action="">
+              <div class="h-2 grey-100">Subscribe to our newsletter</div>
+              <div class="major grey-100 mb-10px">
+                Get interesting updates about us
+              </div>
+              <div class="form-group mb-10px">
+                <input
+                  class="simple"
+                  type="email"
+                  name=""
+                  id=""
+                  placeholder="email"
+                />
+              </div>
+              <button
+                class="major grey-bright bg-black-bright red-big-button"
+                type="submit"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid bg-grey-bright">
+      <div class="container d-flex d-flex-row">
+        <div class="d-flex d-flex-column gap-20px justify-content-start">
+          <img src="assets/images/Logo-red.svg" alt="" class="logo" />
+          <h6 class="menu-item">
+            Copyright © 2023 TECHPRO DC. All rights reserved
+          </h6>
+        </div>
+        <ul class="footer-menu">
+          <li>
+            <a class="menu-item text-decoration-none" href="">About us</a>
+          </li>
+          <li>
+            <a class="menu-item text-decoration-none" href="">Vendors</a>
+          </li>
+          <li>
+            <a class="menu-item text-decoration-none" href="">News</a>
+          </li>
+        </ul>
+        <ul class="footer-menu">
+          <li>
+            <a class="menu-item text-decoration-none" href="">About us</a>
+          </li>
+          <li>
+            <a class="menu-item text-decoration-none" href="">Vendors</a>
+          </li>
+          <li>
+            <a class="menu-item text-decoration-none" href="">News</a>
+          </li>
+        </ul>
+        <div class="d-flex d-flex-row gap-10px ms-auto">
+          <a href="">
+            <img
+              class="footer-social-icon"
+              src="assets/images/linkedin.svg"
+              alt=""
+            />
+          </a>
+          <a href="">
+            <img
+              class="footer-social-icon"
+              src="assets/images/instagram-black.svg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script></script>
+  </body>
+</html>

@@ -21,12 +21,13 @@
       <div
         class="container d-flex d-flex-row d-flex-justify-content-between menu"
       >
-        <ul class="d-flex d-flex-row gap-20px align-items-center list-style-none p-0">
-          <li >
+        <ul
+          class="d-flex d-flex-row gap-20px align-items-center list-style-none p-0"
+        >
+          <li class="logo-container">
             <a href="">
               <img src="assets/images/logo.svg" alt="" class="logo" />
             </a>
-
           </li>
           <li class="has-dropdown">
             <a class="menu-item text-decoration-none grey-bright" href=""
@@ -34,10 +35,18 @@
             >
             <ul class="dropdown-menu">
               <li>
-                <a class="menu-item grey-bright text-decoration-none mt-10px mb-10px" href="">Career</a>
+                <a
+                  class="menu-item grey-bright text-decoration-none mt-10px mb-10px"
+                  href=""
+                  >Career</a
+                >
               </li>
               <li>
-                <a class="menu-item grey-bright text-decoration-none mb-10px" href="">Policies</a>
+                <a
+                  class="menu-item grey-bright text-decoration-none mb-10px"
+                  href=""
+                  >Policies</a
+                >
               </li>
             </ul>
           </li>
@@ -53,7 +62,7 @@
           </li>
         </ul>
         <div class="d-flex flex-row gap-30px align-items-center">
-          <div class="d-flex flex-row gap-10px">
+          <div class="d-flex flex-row gap-10px mobile-hide">
             <a href="">
               <img
                 src="assets/images/instagram.svg"
@@ -69,7 +78,7 @@
               />
             </a>
           </div>
-          <div class="language-dropdown">
+          <div class="language-dropdown mobile-hide">
             <div
               class="active-language d-flex d-flex-row gap-5px align-items-center"
             >
@@ -77,10 +86,12 @@
               <div class="menu grey-bright">En</div>
             </div>
           </div>
-          <a href="" class="menu grey-bright text-decoration-none portal"
+          <a
+            href=""
+            class="menu grey-bright text-decoration-none portal mobile-hide"
             >Portal</a
           >
-          <button class="border-none p-0 m-0 bg-none">
+          <button class="border-none p-0 m-0 bg-none" id="Burger">
             <img
               class="burger-icon"
               src="assets/images/burger_menu.svg"
@@ -90,6 +101,41 @@
         </div>
       </div>
     </header>
+    <div class="burger-menu">
+      <div class="bg-transparent p-0 m-0 border-none close-mobile-menu">
+        <img src="assets/images/close.svg" alt="" />
+      </div>
+      <ul class="d-flex d-flex-column gap-25px p-0 list-style-none">
+        <li><a href="" class="mobile-menu-item">About us</a></li>
+        <li><a href="" class="mobile-menu-item">Vendors</a></li>
+        <li><a href="" class="mobile-menu-item">News</a></li>
+        <li><a href="" class="mobile-menu-item">Policy</a></li>
+        <li><a href="" class="mobile-menu-item">Vacancies</a></li>
+      </ul>
+      <div
+        class="d-flex d-flex-row d-flex-justify-content-between mt-auto align-items-center mb-40px"
+      >
+        <div class="language-dropdown">
+          <div
+            class="active-language d-flex d-flex-row gap-5px align-items-center"
+          >
+            <img src="assets/images/lang.svg" alt="" />
+            <div class="menu grey-bright">En</div>
+          </div>
+        </div>
+        <div class="d-flex flex-row gap-10px">
+          <a href="">
+            <img src="assets/images/instagram.svg" alt="" class="social-icon" />
+          </a>
+          <a href="">
+            <img src="assets/images/linkedin.svg" alt="" class="social-icon" />
+          </a>
+        </div>
+      </div>
+      <a class="mobile-f-red-button mb-40px" href="javascript:void(0)"
+        >Portal</a
+      >
+    </div>
     <div modal class="modal-form">
       <div class="d-flex d-flex-row d-flex-justify-content-between mb-30px">
         <div class="h-2 grey-bright">Become a partner</div>
@@ -103,7 +149,9 @@
           <input class="simple" type="text" name="" id="" />
         </div>
         <div class="modal-form-group">
-          <label class="d-flex grey-bright major" for="">Partnership type</label>
+          <label class="d-flex grey-bright major" for=""
+            >Partnership type</label
+          >
           <select class="simple" name="" id="">
             <option value="">Sales</option>
           </select>
@@ -117,28 +165,27 @@
       </form>
     </div>
     <section
-      class="container-fluid position-relative d-flex d-flex-column"
-      style="
-        background: url(assets/images/bground_4k_dark\ 1.png) no-repeat center
-          top/cover;
-      "
+      class="container-fluid position-relative d-flex d-flex-column main-banner"
     >
-      <img class="left-logo" src="assets/images/left-logo.png" />
-      <img class="big-t" src="assets/images/big-t.png" />
+      <img class="left-logo mobile-hide" src="assets/images/left-logo.png" />
+      <img src="assets/images/left-m.png" alt="" class="left-m">
+      <img class="big-t mobile-hide" src="assets/images/big-t.png" />
+      <img class="big-m-t" src="assets/images/big-m-t.png" />
       <img class="laptop-image" src="assets/images/dell.png" />
       <h1
-        class="max text-center grey-bright mt-189px mb-107px line-height-125 z-index-2"
+        class="max mob-max text-center grey-bright mt-189px mt-m-305px mb-107px mb-m-125px line-height-125 z-index-2"
       >
         Value<br />Added<br />Distributor
       </h1>
-      <button
+      <div class="container d-flex d-flex-column">
+        <button
         call-form-button
-        class="bg-red-main h-2 grey-bright border-none rounded-5px p-12-30 align-self-center mb-116px cursor-pointer z-index-2"
+        class="bg-red-main h-2 grey-bright border-none rounded-5px p-12-30 align-self-center mb-116px mb-m-120px cursor-pointer z-index-2 m-partner"
       >
         Become a partner
       </button>
       <button
-        class="border-none bg-none p-0 m-0 cursor-pointer align-self-center w-max-content bounce-down z-index-2 mb-149px"
+        class="border-none bg-none p-0 m-0 cursor-pointer align-self-center w-max-content bounce-down z-index-2 mb-149px mobile-hide"
       >
         <img
           class="go-down"
@@ -146,8 +193,10 @@
           alt=""
         />
       </button>
+      </div>
+
     </section>
-    <section class="d-flex d-flex-row container-fluid">
+    <section class="d-flex d-flex-row container-fluid scroll-to">
       <div class="home-about-us">
         <h2>About us</h2>
         <h3>
@@ -160,213 +209,234 @@
           Asia countries (Uzbekistan, Turkmenistan and Tajikistan).
         </p>
         <div>
-          <a href="" class="button-2">Read more</a>
+          <a href="" class="button-2 read-more-m">Read more</a>
         </div>
       </div>
     </section>
-    <section class="main-slider-section container-fluid">
-      <div class="custom-slider">
-        <div class="slide prev-slide">
-          <h2>Amet, consectetur adipiscing elit.</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Nec vel sem justo fusce
-            platea dictum quis mi. Sit molestie sit varius nulla risus semper
-            porta. Risus tempor turpis amet sed semper id.
-          </p>
-          <div>
-            <a class="bordered-button" href="">Read more</a>
+    <section class="custom-background">
+      <section class="main-slider-section container-fluid">
+        <div class="custom-slider">
+          <div class="slide prev-slide">
+            <h2>Amet, consectetur adipiscing elit.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Nec vel sem justo fusce
+              platea dictum quis mi. Sit molestie sit varius nulla risus semper
+              porta. Risus tempor turpis amet sed semper id.
+            </p>
+            <div>
+              <a class="bordered-button" href="">Read more</a>
+            </div>
+          </div>
+          <div class="slide active-slide">
+            <h2>Сonsectetur adipiscing elit.</h2>
+            <p>
+              Sit molestie sit varius nulla risus semper porta. Risus tempor
+              turpis amet sed semper id.
+            </p>
+            <div>
+              <a class="bordered-button" href="">Read more</a>
+            </div>
+          </div>
+          <div class="slide next-slide">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Nec vel sem justo fusce
+              platea dictum quis mi. Sit molestie sit varius nulla risus semper
+              porta. Risus tempor turpis amet sed semper id.
+            </p>
+            <div>
+              <a class="bordered-button" href="">Read more</a>
+            </div>
+          </div>
+          <div class="slide">
+            <h2>Sit amet, consectetur adipiscing elit.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Nec vel sem justo fusce
+              platea dictum quis mi.
+            </p>
+            <div>
+              <a class="bordered-button" href="">Read more</a>
+            </div>
           </div>
         </div>
-        <div class="slide active-slide">
-          <h2>Сonsectetur adipiscing elit.</h2>
-          <p>
-            Sit molestie sit varius nulla risus semper porta. Risus tempor
-            turpis amet sed semper id.
-          </p>
-          <div>
-            <a class="bordered-button" href="">Read more</a>
-          </div>
+        <div class="custom-slider-nav mt-m-20px mb-m-50px">
+          <button class="get-prev border-none p-0 m-0">
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_433_112)">
+                <rect width="34" height="34" rx="3" fill="#8E0E00" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M25.4998 16.4388C25.4998 16.7206 25.3879 16.9909 25.1886 17.1901C24.9894 17.3894 24.7191 17.5013 24.4373 17.5013H12.1272L16.6896 22.0616C16.7884 22.1604 16.8667 22.2777 16.9202 22.4067C16.9736 22.5358 17.0012 22.6741 17.0012 22.8138C17.0012 22.9535 16.9736 23.0919 16.9202 23.221C16.8667 23.35 16.7884 23.4673 16.6896 23.5661C16.5908 23.6649 16.4735 23.7432 16.3444 23.7967C16.2154 23.8502 16.077 23.8777 15.9373 23.8777C15.7976 23.8777 15.6593 23.8502 15.5302 23.7967C15.4011 23.7432 15.2839 23.6649 15.1851 23.5661L8.81007 17.1911C8.71113 17.0924 8.63262 16.9751 8.57906 16.8461C8.5255 16.717 8.49792 16.5786 8.49792 16.4388C8.49792 16.2991 8.5255 16.1607 8.57906 16.0316C8.63262 15.9025 8.71113 15.7853 8.81007 15.6866L15.1851 9.31159C15.3846 9.11208 15.6552 9 15.9373 9C16.2195 9 16.4901 9.11208 16.6896 9.31159C16.8891 9.5111 17.0012 9.78169 17.0012 10.0638C17.0012 10.346 16.8891 10.6166 16.6896 10.8161L12.1272 15.3763H24.4373C24.7191 15.3763 24.9894 15.4883 25.1886 15.6875C25.3879 15.8868 25.4998 16.157 25.4998 16.4388Z"
+                  fill="#E9F1F7"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_433_112">
+                  <rect width="34" height="34" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+          <button class="get-next border-none p-0 m-0">
+            <svg
+              width="34"
+              height="34"
+              viewBox="0 0 34 34"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_433_112)">
+                <rect width="34" height="34" rx="3" fill="#8E0E00" />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M25.4998 16.4388C25.4998 16.7206 25.3879 16.9909 25.1886 17.1901C24.9894 17.3894 24.7191 17.5013 24.4373 17.5013H12.1272L16.6896 22.0616C16.7884 22.1604 16.8667 22.2777 16.9202 22.4067C16.9736 22.5358 17.0012 22.6741 17.0012 22.8138C17.0012 22.9535 16.9736 23.0919 16.9202 23.221C16.8667 23.35 16.7884 23.4673 16.6896 23.5661C16.5908 23.6649 16.4735 23.7432 16.3444 23.7967C16.2154 23.8502 16.077 23.8777 15.9373 23.8777C15.7976 23.8777 15.6593 23.8502 15.5302 23.7967C15.4011 23.7432 15.2839 23.6649 15.1851 23.5661L8.81007 17.1911C8.71113 17.0924 8.63262 16.9751 8.57906 16.8461C8.5255 16.717 8.49792 16.5786 8.49792 16.4388C8.49792 16.2991 8.5255 16.1607 8.57906 16.0316C8.63262 15.9025 8.71113 15.7853 8.81007 15.6866L15.1851 9.31159C15.3846 9.11208 15.6552 9 15.9373 9C16.2195 9 16.4901 9.11208 16.6896 9.31159C16.8891 9.5111 17.0012 9.78169 17.0012 10.0638C17.0012 10.346 16.8891 10.6166 16.6896 10.8161L12.1272 15.3763H24.4373C24.7191 15.3763 24.9894 15.4883 25.1886 15.6875C25.3879 15.8868 25.4998 16.157 25.4998 16.4388Z"
+                  fill="#E9F1F7"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_433_112">
+                  <rect width="34" height="34" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
         </div>
-        <div class="slide next-slide">
-          <h2>Lorem ipsum dolor sit amet</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Nec vel sem justo fusce
-            platea dictum quis mi. Sit molestie sit varius nulla risus semper
-            porta. Risus tempor turpis amet sed semper id.
-          </p>
-          <div>
-            <a class="bordered-button" href="">Read more</a>
-          </div>
-        </div>
-        <div class="slide">
-          <h2>Sit amet, consectetur adipiscing elit.</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Nec vel sem justo fusce
-            platea dictum quis mi.
-          </p>
-          <div>
-            <a class="bordered-button" href="">Read more</a>
-          </div>
-        </div>
-      </div>
-      <div class="custom-slider-nav">
-        <button class="get-prev border-none p-0 m-0">
-          <svg
-            width="34"
-            height="34"
-            viewBox="0 0 34 34"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
+      </section>
+      <section class="container-fluid d-flex d-flex-column">
+        <div
+          class="position-relative d-flex d-flex-row justify-content-center mb-26px mb-m-30px container align-items-center"
+        >
+          <div class="h-1 black-main text-center w-100 mob-h1 text-m-start">Our Vendors</div>
+          <a
+            class="bordered-link red-main pae-vc right-0 border-2px-red-main mob-menu pae-vc-m"
+            href=""
+            >See all</a
           >
-            <g clip-path="url(#clip0_433_112)">
-              <rect width="34" height="34" rx="3" fill="#8E0E00" />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M25.4998 16.4388C25.4998 16.7206 25.3879 16.9909 25.1886 17.1901C24.9894 17.3894 24.7191 17.5013 24.4373 17.5013H12.1272L16.6896 22.0616C16.7884 22.1604 16.8667 22.2777 16.9202 22.4067C16.9736 22.5358 17.0012 22.6741 17.0012 22.8138C17.0012 22.9535 16.9736 23.0919 16.9202 23.221C16.8667 23.35 16.7884 23.4673 16.6896 23.5661C16.5908 23.6649 16.4735 23.7432 16.3444 23.7967C16.2154 23.8502 16.077 23.8777 15.9373 23.8777C15.7976 23.8777 15.6593 23.8502 15.5302 23.7967C15.4011 23.7432 15.2839 23.6649 15.1851 23.5661L8.81007 17.1911C8.71113 17.0924 8.63262 16.9751 8.57906 16.8461C8.5255 16.717 8.49792 16.5786 8.49792 16.4388C8.49792 16.2991 8.5255 16.1607 8.57906 16.0316C8.63262 15.9025 8.71113 15.7853 8.81007 15.6866L15.1851 9.31159C15.3846 9.11208 15.6552 9 15.9373 9C16.2195 9 16.4901 9.11208 16.6896 9.31159C16.8891 9.5111 17.0012 9.78169 17.0012 10.0638C17.0012 10.346 16.8891 10.6166 16.6896 10.8161L12.1272 15.3763H24.4373C24.7191 15.3763 24.9894 15.4883 25.1886 15.6875C25.3879 15.8868 25.4998 16.157 25.4998 16.4388Z"
-                fill="#E9F1F7"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_433_112">
-                <rect width="34" height="34" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </button>
-        <button class="get-next border-none p-0 m-0">
-          <svg
-            width="34"
-            height="34"
-            viewBox="0 0 34 34"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_433_112)">
-              <rect width="34" height="34" rx="3" fill="#8E0E00" />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M25.4998 16.4388C25.4998 16.7206 25.3879 16.9909 25.1886 17.1901C24.9894 17.3894 24.7191 17.5013 24.4373 17.5013H12.1272L16.6896 22.0616C16.7884 22.1604 16.8667 22.2777 16.9202 22.4067C16.9736 22.5358 17.0012 22.6741 17.0012 22.8138C17.0012 22.9535 16.9736 23.0919 16.9202 23.221C16.8667 23.35 16.7884 23.4673 16.6896 23.5661C16.5908 23.6649 16.4735 23.7432 16.3444 23.7967C16.2154 23.8502 16.077 23.8777 15.9373 23.8777C15.7976 23.8777 15.6593 23.8502 15.5302 23.7967C15.4011 23.7432 15.2839 23.6649 15.1851 23.5661L8.81007 17.1911C8.71113 17.0924 8.63262 16.9751 8.57906 16.8461C8.5255 16.717 8.49792 16.5786 8.49792 16.4388C8.49792 16.2991 8.5255 16.1607 8.57906 16.0316C8.63262 15.9025 8.71113 15.7853 8.81007 15.6866L15.1851 9.31159C15.3846 9.11208 15.6552 9 15.9373 9C16.2195 9 16.4901 9.11208 16.6896 9.31159C16.8891 9.5111 17.0012 9.78169 17.0012 10.0638C17.0012 10.346 16.8891 10.6166 16.6896 10.8161L12.1272 15.3763H24.4373C24.7191 15.3763 24.9894 15.4883 25.1886 15.6875C25.3879 15.8868 25.4998 16.157 25.4998 16.4388Z"
-                fill="#E9F1F7"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_433_112">
-                <rect width="34" height="34" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </button>
-      </div>
-    </section>
-    <section class="container-fluid d-flex d-flex-column">
-      <div class="position-relative d-flex justify-content-center mb-26px container">
-        <div class="h-1 black-main text-center w-100 ">
-          Our Vendors
         </div>
-        <a class="bordered-link red-main pae-vc right-0 border-2px-red-main" href="">See all</a>
-      </div>
-      <div class="vendors-slider swiper w-100">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="assets/images/logo-w.png" alt="Vendor 1" />
-            <img src="assets/images/logo-c.png" alt="" />
+        <div class="d-flex d-flex-column justify-content-center px-26px-m">
+          <div class="vendors-slider swiper w-100">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/images/logo-w.png" alt="Vendor 1" />
+                <img src="assets/images/logo-c.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/logo-w.png" alt="Vendor 1" />
+                <img src="assets/images/logo-c.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/logo-w.png" alt="Vendor 1" />
+                <img src="assets/images/logo-c.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/logo-w.png" alt="Vendor 1" />
+                <img src="assets/images/logo-c.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/logo-w.png" alt="Vendor 1" />
+                <img src="assets/images/logo-c.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/logo-w.png" alt="Vendor 1" />
+                <img src="assets/images/logo-c.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/logo-w.png" alt="Vendor 1" />
+                <img src="assets/images/logo-c.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/logo-w.png" alt="Vendor 1" />
+                <img src="assets/images/logo-c.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/logo-w.png" alt="Vendor 1" />
+                <img src="assets/images/logo-c.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/images/logo-w.png" alt="Vendor 1" />
+                <img src="assets/images/logo-c.png" alt="" />
+              </div>
+            </div>
           </div>
-          <div class="swiper-slide">
-            <img src="assets/images/logo-w.png" alt="Vendor 1" />
-            <img src="assets/images/logo-c.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/images/logo-w.png" alt="Vendor 1" />
-            <img src="assets/images/logo-c.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/images/logo-w.png" alt="Vendor 1" />
-            <img src="assets/images/logo-c.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/images/logo-w.png" alt="Vendor 1" />
-            <img src="assets/images/logo-c.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/images/logo-w.png" alt="Vendor 1" />
-            <img src="assets/images/logo-c.png" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="assets/images/logo-w.png" alt="Vendor 1" />
-            <img src="assets/images/logo-c.png" alt="" />
+          <div class="slider-nav mb-100px mt-m-20px mb-m-50px">
+            <button vendors-slider class="get-prev border-none p-0 m-0">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_433_112)">
+                  <rect width="34" height="34" rx="3" fill="#8E0E00" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M25.4998 16.4388C25.4998 16.7206 25.3879 16.9909 25.1886 17.1901C24.9894 17.3894 24.7191 17.5013 24.4373 17.5013H12.1272L16.6896 22.0616C16.7884 22.1604 16.8667 22.2777 16.9202 22.4067C16.9736 22.5358 17.0012 22.6741 17.0012 22.8138C17.0012 22.9535 16.9736 23.0919 16.9202 23.221C16.8667 23.35 16.7884 23.4673 16.6896 23.5661C16.5908 23.6649 16.4735 23.7432 16.3444 23.7967C16.2154 23.8502 16.077 23.8777 15.9373 23.8777C15.7976 23.8777 15.6593 23.8502 15.5302 23.7967C15.4011 23.7432 15.2839 23.6649 15.1851 23.5661L8.81007 17.1911C8.71113 17.0924 8.63262 16.9751 8.57906 16.8461C8.5255 16.717 8.49792 16.5786 8.49792 16.4388C8.49792 16.2991 8.5255 16.1607 8.57906 16.0316C8.63262 15.9025 8.71113 15.7853 8.81007 15.6866L15.1851 9.31159C15.3846 9.11208 15.6552 9 15.9373 9C16.2195 9 16.4901 9.11208 16.6896 9.31159C16.8891 9.5111 17.0012 9.78169 17.0012 10.0638C17.0012 10.346 16.8891 10.6166 16.6896 10.8161L12.1272 15.3763H24.4373C24.7191 15.3763 24.9894 15.4883 25.1886 15.6875C25.3879 15.8868 25.4998 16.157 25.4998 16.4388Z"
+                    fill="#E9F1F7"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_433_112">
+                    <rect width="34" height="34" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <button vendors-slider class="get-next border-none p-0 m-0">
+              <svg
+                width="34"
+                height="34"
+                viewBox="0 0 34 34"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_433_112)">
+                  <rect width="34" height="34" rx="3" fill="#8E0E00" />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M25.4998 16.4388C25.4998 16.7206 25.3879 16.9909 25.1886 17.1901C24.9894 17.3894 24.7191 17.5013 24.4373 17.5013H12.1272L16.6896 22.0616C16.7884 22.1604 16.8667 22.2777 16.9202 22.4067C16.9736 22.5358 17.0012 22.6741 17.0012 22.8138C17.0012 22.9535 16.9736 23.0919 16.9202 23.221C16.8667 23.35 16.7884 23.4673 16.6896 23.5661C16.5908 23.6649 16.4735 23.7432 16.3444 23.7967C16.2154 23.8502 16.077 23.8777 15.9373 23.8777C15.7976 23.8777 15.6593 23.8502 15.5302 23.7967C15.4011 23.7432 15.2839 23.6649 15.1851 23.5661L8.81007 17.1911C8.71113 17.0924 8.63262 16.9751 8.57906 16.8461C8.5255 16.717 8.49792 16.5786 8.49792 16.4388C8.49792 16.2991 8.5255 16.1607 8.57906 16.0316C8.63262 15.9025 8.71113 15.7853 8.81007 15.6866L15.1851 9.31159C15.3846 9.11208 15.6552 9 15.9373 9C16.2195 9 16.4901 9.11208 16.6896 9.31159C16.8891 9.5111 17.0012 9.78169 17.0012 10.0638C17.0012 10.346 16.8891 10.6166 16.6896 10.8161L12.1272 15.3763H24.4373C24.7191 15.3763 24.9894 15.4883 25.1886 15.6875C25.3879 15.8868 25.4998 16.157 25.4998 16.4388Z"
+                    fill="#E9F1F7"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_433_112">
+                    <rect width="34" height="34" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
           </div>
         </div>
-      </div>
-      <div class="slider-nav mb-100px">
-        <button vendors-slider class="get-prev border-none p-0 m-0">
-          <svg
-            width="34"
-            height="34"
-            viewBox="0 0 34 34"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_433_112)">
-              <rect width="34" height="34" rx="3" fill="#8E0E00" />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M25.4998 16.4388C25.4998 16.7206 25.3879 16.9909 25.1886 17.1901C24.9894 17.3894 24.7191 17.5013 24.4373 17.5013H12.1272L16.6896 22.0616C16.7884 22.1604 16.8667 22.2777 16.9202 22.4067C16.9736 22.5358 17.0012 22.6741 17.0012 22.8138C17.0012 22.9535 16.9736 23.0919 16.9202 23.221C16.8667 23.35 16.7884 23.4673 16.6896 23.5661C16.5908 23.6649 16.4735 23.7432 16.3444 23.7967C16.2154 23.8502 16.077 23.8777 15.9373 23.8777C15.7976 23.8777 15.6593 23.8502 15.5302 23.7967C15.4011 23.7432 15.2839 23.6649 15.1851 23.5661L8.81007 17.1911C8.71113 17.0924 8.63262 16.9751 8.57906 16.8461C8.5255 16.717 8.49792 16.5786 8.49792 16.4388C8.49792 16.2991 8.5255 16.1607 8.57906 16.0316C8.63262 15.9025 8.71113 15.7853 8.81007 15.6866L15.1851 9.31159C15.3846 9.11208 15.6552 9 15.9373 9C16.2195 9 16.4901 9.11208 16.6896 9.31159C16.8891 9.5111 17.0012 9.78169 17.0012 10.0638C17.0012 10.346 16.8891 10.6166 16.6896 10.8161L12.1272 15.3763H24.4373C24.7191 15.3763 24.9894 15.4883 25.1886 15.6875C25.3879 15.8868 25.4998 16.157 25.4998 16.4388Z"
-                fill="#E9F1F7"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_433_112">
-                <rect width="34" height="34" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </button>
-        <button vendors-slider class="get-next border-none p-0 m-0">
-          <svg
-            width="34"
-            height="34"
-            viewBox="0 0 34 34"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g clip-path="url(#clip0_433_112)">
-              <rect width="34" height="34" rx="3" fill="#8E0E00" />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M25.4998 16.4388C25.4998 16.7206 25.3879 16.9909 25.1886 17.1901C24.9894 17.3894 24.7191 17.5013 24.4373 17.5013H12.1272L16.6896 22.0616C16.7884 22.1604 16.8667 22.2777 16.9202 22.4067C16.9736 22.5358 17.0012 22.6741 17.0012 22.8138C17.0012 22.9535 16.9736 23.0919 16.9202 23.221C16.8667 23.35 16.7884 23.4673 16.6896 23.5661C16.5908 23.6649 16.4735 23.7432 16.3444 23.7967C16.2154 23.8502 16.077 23.8777 15.9373 23.8777C15.7976 23.8777 15.6593 23.8502 15.5302 23.7967C15.4011 23.7432 15.2839 23.6649 15.1851 23.5661L8.81007 17.1911C8.71113 17.0924 8.63262 16.9751 8.57906 16.8461C8.5255 16.717 8.49792 16.5786 8.49792 16.4388C8.49792 16.2991 8.5255 16.1607 8.57906 16.0316C8.63262 15.9025 8.71113 15.7853 8.81007 15.6866L15.1851 9.31159C15.3846 9.11208 15.6552 9 15.9373 9C16.2195 9 16.4901 9.11208 16.6896 9.31159C16.8891 9.5111 17.0012 9.78169 17.0012 10.0638C17.0012 10.346 16.8891 10.6166 16.6896 10.8161L12.1272 15.3763H24.4373C24.7191 15.3763 24.9894 15.4883 25.1886 15.6875C25.3879 15.8868 25.4998 16.157 25.4998 16.4388Z"
-                fill="#E9F1F7"
-              />
-            </g>
-            <defs>
-              <clipPath id="clip0_433_112">
-                <rect width="34" height="34" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </button>
-      </div>
+  
+      </section>
     </section>
     <section
-      class="container-fluid"
-      style="
-        background: url(assets/images/bottom_back.png) no-repeat center
-            top/cover,
-          var(--black-bright);
-      "
+      class="container-fluid bottom-back-bg"
+
     >
       <div class="container d-flex d-flex-column">
         <div
-          class="position-relative d-flex justify-content-center mt-97px mb-66px"
+          class="position-relative d-flex justify-content-center mt-97px mt-m-50px mb-66px mb-m-38px"
         >
-          <div class="h-1 grey-bright text-center w-100 container">News</div>
-          <a class="bordered-link grey-bright pae-vc right-0 border-2px-grey-bright" href="">See all</a>
+          <div class="h-1 grey-bright text-center w-100 container mob-h1 text-m-start ms-m-0">News</div>
+          <a
+            class="bordered-link grey-bright pae-vc right-0 border-2px-grey-bright mob-menu pae-vc-m"
+            href=""
+            >See all</a
+          >
         </div>
-        <div class="grid-3-columns">
-          <div class="grid-element">
+        <div class="grid-3-columns grid-m-1-column m-limit-2">
+          <div class="grid-element s-n-element">
             <div
               class="news-image"
               style="background-image: url(assets/images/390490.png)"
@@ -382,7 +452,7 @@
               <a class="news-read-more" href=""> Read more </a>
             </div>
           </div>
-          <div class="grid-element">
+          <div class="grid-element s-n-element">
             <div
               class="news-image"
               style="background-image: url(assets/images/390490.png)"
@@ -398,7 +468,7 @@
               <a class="news-read-more" href=""> Read more </a>
             </div>
           </div>
-          <div class="grid-element">
+          <div class="grid-element s-n-element">
             <div
               class="news-image"
               style="background-image: url(assets/images/390490.png)"
@@ -416,29 +486,25 @@
           </div>
         </div>
       </div>
-      <div class="container d-flex d-flex-column position-relative pb-100px mt-88px">
+      <div
+        class="container d-flex d-flex-column position-relative pb-100px pb-m-50px mt-88px mt-m-35px "
+      >
         <div
-          class="position-absolute w-100 top-0 left-0 right-0 d-flex h-100"
-          style="
-            background: url(assets/images/big-t-bottom.png) no-repeat center
-              top/cover;
-            opacity: 0.5;
-            margin-top: 1rem;
-            z-index: 0;
-          "
+          class="position-absolute w-100 top-0 left-0 right-0 d-flex h-100 contacts-background"
+
         ></div>
-        <div class="position-relative d-flex justify-content-center mb-47px">
-          <div class="h-1 grey-bright text-center w-100 container">
+        <div class="position-relative d-flex justify-content-center mb-47px mb-m-26px">
+          <div class="h-1 grey-bright text-center w-100 container mob-h1 text-m-start ms-m-0">
             Contact Us
           </div>
         </div>
-        <div class="d-flex d-flex-row gap-63px" style="z-index: 2">
+        <div class="d-flex d-flex-row d-flex-m-column gap-63px gap-m-22px" style="z-index: 2">
           <div class="contact-info">
             <div class="contact-row">
               <img src="assets/images/geo-alt.svg" alt="" />
               <div class="d-flex d-flex-column gap-5px">
-                <div class="gilroy-bold">Head Office</div>
-                <div class="gilroy-regular">
+                <div class="gilroy-bold mulish-m fw-600-m lh-125-m">Head Office</div>
+                <div class="gilroy-regular mulish-m lh-1875-m">
                   73a Langley Park Road Sutton, SM2 5HA, United Kingdom 
                 </div>
               </div>
@@ -446,8 +512,8 @@
             <div class="contact-row">
               <img src="assets/images/geo-alt.svg" alt="" />
               <div class="d-flex d-flex-column gap-5px">
-                <div class="gilroy-bold">Head Office</div>
-                <div class="gilroy-regular">
+                <div class="gilroy-bold mulish-m fw-600-m lh-125-m">Head Office</div>
+                <div class="gilroy-regular mulish-m lh-1875-m">
                   73a Langley Park Road Sutton, SM2 5HA, United Kingdom 
                 </div>
               </div>
@@ -455,16 +521,16 @@
             <div class="contact-row">
               <img src="assets/images/geo-alt.svg" alt="" />
               <div class="d-flex d-flex-column gap-5px">
-                <div class="gilroy-bold">Head Office</div>
-                <div class="gilroy-regular">
+                <div class="gilroy-bold mulish-m fw-600-m lh-125-m">Head Office</div>
+                <div class="gilroy-regular mulish-m lh-1875-m">
                   73a Langley Park Road Sutton, SM2 5HA, United Kingdom 
                 </div>
               </div>
             </div>
             <div class="contact-row">
               <img class="my-auto" src="assets/images/telephone.svg" alt="" />
-              <div class="d-flex d-flex-column gap-5px">
-                <div class="gilroy-bold">Telefon</div>
+              <div class="d-flex d-flex-column gap-5px gap-7px-m">
+                <div class="gilroy-bold fw-600-m">Telefon</div>
                 <div class="gilroy-regular">+994 55 213 13 45</div>
                 <div class="gilroy-regular">+994 55 213 13 45</div>
                 <div class="gilroy-regular">+994 55 213 13 45</div>
@@ -472,7 +538,7 @@
             </div>
             <img class="maps-image" src="assets/images/maps.png" alt="" />
             <div class="custom-contact-block">
-              <div class="h-2 contact-info-title grey-100 mb-10px">
+              <div class="h-2 contact-info-title grey-100 mb-10px major-m">
                 Contact our sales team:
               </div>
               <div class="custom-contact-row">
@@ -485,7 +551,7 @@
               </div>
             </div>
             <div class="custom-contact-block">
-              <div class="h-2 contact-info-title grey-100 mb-10px">
+              <div class="h-2 contact-info-title grey-100 mb-10px major-m">
                 Contact our sales team:
               </div>
               <div class="custom-contact-row">
@@ -577,8 +643,8 @@
               </button>
             </form>
             <form class="d-flex d-flex-column" action="">
-              <div class="h-2 grey-100">Subscribe to our newsletter</div>
-              <div class="major grey-100 mb-10px">
+              <div class="h-2 grey-100 major-m mb-m-5px">Subscribe to our newsletter</div>
+              <div class="major grey-100 mb-10px mob-menu">
                 Get interesting updates about us
               </div>
               <div class="form-group mb-10px">
@@ -602,51 +668,54 @@
       </div>
     </section>
     <footer class="container-fluid bg-grey-bright">
-      <div class="container d-flex d-flex-row">
+      <div class="container d-flex d-flex-row d-flex-m-column-reverse gap-m-20px">
         <div class="d-flex d-flex-column gap-20px justify-content-start">
-          <img src="assets/images/Logo-red.svg" alt="" class="logo" />
-          <h6 class="menu-item">
+          <img src="assets/images/Logo-red.svg" alt="" class="logo footer-m-logo" />
+          <h6 class="menu-item max-width-60vw-m">
             Copyright © 2023 TECHPRO DC. All rights reserved
           </h6>
         </div>
-        <ul class="footer-menu">
-          <li>
-            <a class="menu-item text-decoration-none" href="">About us</a>
-          </li>
-          <li>
-            <a class="menu-item text-decoration-none" href="">Vendors</a>
-          </li>
-          <li>
-            <a class="menu-item text-decoration-none" href="">News</a>
-          </li>
-        </ul>
-        <ul class="footer-menu">
-          <li>
-            <a class="menu-item text-decoration-none" href="">About us</a>
-          </li>
-          <li>
-            <a class="menu-item text-decoration-none" href="">Vendors</a>
-          </li>
-          <li>
-            <a class="menu-item text-decoration-none" href="">News</a>
-          </li>
-        </ul>
-        <div class="d-flex d-flex-row gap-10px ms-auto">
-          <a href="">
-            <img
-              class="footer-social-icon"
-              src="assets/images/linkedin.svg"
-              alt=""
-            />
-          </a>
-          <a href="">
-            <img
-              class="footer-social-icon"
-              src="assets/images/instagram-black.svg"
-              alt=""
-            />
-          </a>
+        <div class="d-flex d-flex-row flex-1">
+          <ul class="footer-menu">
+            <li>
+              <a class="menu-item text-decoration-none" href="">About us</a>
+            </li>
+            <li>
+              <a class="menu-item text-decoration-none" href="">Vendors</a>
+            </li>
+            <li>
+              <a class="menu-item text-decoration-none" href="">News</a>
+            </li>
+          </ul>
+          <ul class="footer-menu">
+            <li>
+              <a class="menu-item text-decoration-none" href="">About us</a>
+            </li>
+            <li>
+              <a class="menu-item text-decoration-none" href="">Vendors</a>
+            </li>
+            <li>
+              <a class="menu-item text-decoration-none" href="">News</a>
+            </li>
+          </ul>
+          <div class="d-flex d-flex-row gap-10px ms-auto ">
+            <a href="">
+              <img
+                class="footer-social-icon"
+                src="assets/images/linkedin.svg"
+                alt=""
+              />
+            </a>
+            <a href="">
+              <img
+                class="footer-social-icon"
+                src="assets/images/instagram-black.svg"
+                alt=""
+              />
+            </a>
+          </div>
         </div>
+
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

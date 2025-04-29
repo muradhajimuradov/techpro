@@ -89,7 +89,7 @@
             class="menu red-main text-decoration-none portal red-portal"
             >Portal</a
           >
-          <button class="border-none p-0 m-0 bg-none">
+          <button class="border-none p-0 m-0 bg-none" id="Burger">
             <img
               class="burger-icon"
               src="assets/images/red_burger_menu.svg"
@@ -527,26 +527,39 @@
                             src="assets/images/cloud-download.svg"
                             alt=""
                           />
-                          <div class="simple grey-100 mb-13px">Click here to upload or drop files here</div>
+                          <div class="simple grey-100 mb-13px">
+                            Click here to upload or drop files here
+                          </div>
                           <div class="simple grey-100">Max file size 50 mb</div>
                           <div class="filename simple red-main"></div>
                         </label>
-                        <input class="d-none" type="file" name="file" id="file" />
+                        <input
+                          class="d-none"
+                          type="file"
+                          name="file"
+                          id="file"
+                        />
                       </div>
                       <script>
-                        document.getElementById('file').addEventListener('change', function(event) {
-                          const file = event.target.files[0];
-                          const filenameElement = document.querySelector('.filename');
-                          if (file) {
-                            if (file.size > 50 * 1024 * 1024) { // 50 MB in bytes
-                              alert('File size exceeds 50 MB. Please upload a smaller file.');
-                              event.target.value = ''; // Clear the input
-                              filenameElement.textContent = ''; // Clear the filename display
-                            } else {
-                              filenameElement.textContent = file.name; // Display the file name
+                        document
+                          .getElementById("file")
+                          .addEventListener("change", function (event) {
+                            const file = event.target.files[0];
+                            const filenameElement =
+                              document.querySelector(".filename");
+                            if (file) {
+                              if (file.size > 50 * 1024 * 1024) {
+                                // 50 MB in bytes
+                                alert(
+                                  "File size exceeds 50 MB. Please upload a smaller file."
+                                );
+                                event.target.value = ""; // Clear the input
+                                filenameElement.textContent = ""; // Clear the filename display
+                              } else {
+                                filenameElement.textContent = file.name; // Display the file name
+                              }
                             }
-                          }
-                        });
+                          });
                       </script>
                       <button
                         class="major grey-bright bg-red-main red-big-button"
@@ -572,30 +585,32 @@
       "
     >
       <div
-        class="container d-flex d-flex-column position-relative pb-100px mt-88px"
+        class="container d-flex d-flex-column position-relative pb-100px pb-m-50px mt-88px mt-m-35px"
       >
         <div
-          class="position-absolute w-100 top-0 left-0 right-0 d-flex h-100"
-          style="
-            background: url(assets/images/big-t-bottom.png) no-repeat center
-              top/cover;
-            opacity: 0.5;
-            margin-top: 1rem;
-            z-index: 0;
-          "
+          class="position-absolute w-100 top-0 left-0 right-0 d-flex h-100 contacts-background"
         ></div>
-        <div class="position-relative d-flex justify-content-center mb-47px">
-          <div class="h-1 grey-bright text-center w-100 container">
+        <div
+          class="position-relative d-flex justify-content-center mb-47px mb-m-26px"
+        >
+          <div
+            class="h-1 grey-bright text-center w-100 container mob-h1 text-m-start ms-m-0"
+          >
             Contact Us
           </div>
         </div>
-        <div class="d-flex d-flex-row gap-63px" style="z-index: 2">
+        <div
+          class="d-flex d-flex-row d-flex-m-column gap-63px gap-m-22px"
+          style="z-index: 2"
+        >
           <div class="contact-info">
             <div class="contact-row">
               <img src="assets/images/geo-alt.svg" alt="" />
               <div class="d-flex d-flex-column gap-5px">
-                <div class="gilroy-bold">Head Office</div>
-                <div class="gilroy-regular">
+                <div class="gilroy-bold mulish-m fw-600-m lh-125-m">
+                  Head Office
+                </div>
+                <div class="gilroy-regular mulish-m lh-1875-m">
                   73a Langley Park Road Sutton, SM2 5HA, United Kingdom 
                 </div>
               </div>
@@ -603,8 +618,10 @@
             <div class="contact-row">
               <img src="assets/images/geo-alt.svg" alt="" />
               <div class="d-flex d-flex-column gap-5px">
-                <div class="gilroy-bold">Head Office</div>
-                <div class="gilroy-regular">
+                <div class="gilroy-bold mulish-m fw-600-m lh-125-m">
+                  Head Office
+                </div>
+                <div class="gilroy-regular mulish-m lh-1875-m">
                   73a Langley Park Road Sutton, SM2 5HA, United Kingdom 
                 </div>
               </div>
@@ -612,16 +629,18 @@
             <div class="contact-row">
               <img src="assets/images/geo-alt.svg" alt="" />
               <div class="d-flex d-flex-column gap-5px">
-                <div class="gilroy-bold">Head Office</div>
-                <div class="gilroy-regular">
+                <div class="gilroy-bold mulish-m fw-600-m lh-125-m">
+                  Head Office
+                </div>
+                <div class="gilroy-regular mulish-m lh-1875-m">
                   73a Langley Park Road Sutton, SM2 5HA, United Kingdom 
                 </div>
               </div>
             </div>
             <div class="contact-row">
               <img class="my-auto" src="assets/images/telephone.svg" alt="" />
-              <div class="d-flex d-flex-column gap-5px">
-                <div class="gilroy-bold">Telefon</div>
+              <div class="d-flex d-flex-column gap-5px gap-7px-m">
+                <div class="gilroy-bold fw-600-m">Telefon</div>
                 <div class="gilroy-regular">+994 55 213 13 45</div>
                 <div class="gilroy-regular">+994 55 213 13 45</div>
                 <div class="gilroy-regular">+994 55 213 13 45</div>
@@ -629,7 +648,7 @@
             </div>
             <img class="maps-image" src="assets/images/maps.png" alt="" />
             <div class="custom-contact-block">
-              <div class="h-2 contact-info-title grey-100 mb-10px">
+              <div class="h-2 contact-info-title grey-100 mb-10px major-m">
                 Contact our sales team:
               </div>
               <div class="custom-contact-row">
@@ -642,7 +661,7 @@
               </div>
             </div>
             <div class="custom-contact-block">
-              <div class="h-2 contact-info-title grey-100 mb-10px">
+              <div class="h-2 contact-info-title grey-100 mb-10px major-m">
                 Contact our sales team:
               </div>
               <div class="custom-contact-row">
@@ -734,8 +753,10 @@
               </button>
             </form>
             <form class="d-flex d-flex-column" action="">
-              <div class="h-2 grey-100">Subscribe to our newsletter</div>
-              <div class="major grey-100 mb-10px">
+              <div class="h-2 grey-100 major-m mb-m-5px">
+                Subscribe to our newsletter
+              </div>
+              <div class="major grey-100 mb-10px mob-menu">
                 Get interesting updates about us
               </div>
               <div class="form-group mb-10px">

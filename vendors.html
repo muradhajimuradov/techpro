@@ -24,7 +24,7 @@
         <ul
           class="d-flex d-flex-row gap-20px align-items-center list-style-none p-0"
         >
-          <li>
+          <li class="logo-container">
             <a href="">
               <img src="assets/images/red-logo.svg" alt="" class="logo" />
             </a>
@@ -60,7 +60,7 @@
           </li>
         </ul>
         <div class="d-flex flex-row gap-30px align-items-center">
-          <div class="d-flex flex-row gap-10px">
+          <div class="d-flex flex-row gap-10px mobile-hide">
             <a href="">
               <img
                 src="assets/images/red-instagram.svg"
@@ -76,7 +76,7 @@
               />
             </a>
           </div>
-          <div class="language-dropdown">
+          <div class="language-dropdown mobile-hide">
             <div
               class="active-language d-flex d-flex-row gap-5px align-items-center"
             >
@@ -86,10 +86,10 @@
           </div>
           <a
             href=""
-            class="menu red-main text-decoration-none portal red-portal"
+            class="menu red-main text-decoration-none portal red-portal mobile-hide"
             >Portal</a
           >
-          <button class="border-none p-0 m-0 bg-none">
+          <button class="border-none p-0 m-0 bg-none" id="Burger">
             <img
               class="burger-icon"
               src="assets/images/red_burger_menu.svg"
@@ -99,6 +99,41 @@
         </div>
       </div>
     </header>
+    <div class="burger-menu">
+      <div class="bg-transparent p-0 m-0 border-none close-mobile-menu">
+        <img src="assets/images/close.svg" alt="" />
+      </div>
+      <ul class="d-flex d-flex-column gap-25px p-0 list-style-none">
+        <li><a href="" class="mobile-menu-item">About us</a></li>
+        <li><a href="" class="mobile-menu-item">Vendors</a></li>
+        <li><a href="" class="mobile-menu-item">News</a></li>
+        <li><a href="" class="mobile-menu-item">Policy</a></li>
+        <li><a href="" class="mobile-menu-item">Vacancies</a></li>
+      </ul>
+      <div
+        class="d-flex d-flex-row d-flex-justify-content-between mt-auto align-items-center mb-40px"
+      >
+        <div class="language-dropdown">
+          <div
+            class="active-language d-flex d-flex-row gap-5px align-items-center"
+          >
+            <img src="assets/images/lang.svg" alt="" />
+            <div class="menu grey-bright">En</div>
+          </div>
+        </div>
+        <div class="d-flex flex-row gap-10px">
+          <a href="">
+            <img src="assets/images/instagram.svg" alt="" class="social-icon" />
+          </a>
+          <a href="">
+            <img src="assets/images/linkedin.svg" alt="" class="social-icon" />
+          </a>
+        </div>
+      </div>
+      <a class="mobile-f-red-button mb-40px" href="javascript:void(0)"
+        >Portal</a
+      >
+    </div>
     <div modal class="modal-form">
       <div class="d-flex d-flex-row d-flex-justify-content-between mb-30px">
         <div class="h-2 grey-bright">Become a partner</div>
@@ -128,16 +163,16 @@
       </form>
     </div>
     <section
-      class="container-fluid first-section-margin position-relative"
-      style="background: url(assets/images/bg4k.png) no-repeat center top/cover"
+      class="container-fluid first-section-margin position-relative vendors-container"
+      
     >
       <img src="assets/images/union-white.png" class="union" />
       <img src="assets/images/union-2.png" class="union-2" />
       <div class="container">
-        <h1 class="max line-height-125 black-main text-center mt-50px mb-73px">
+        <h1 class="max mob-max line-height-125 black-main text-center mt-50px mt-m-30px mb-73px mb-m-20px">
           Vendors
         </h1>
-        <div class="d-flex d-flex-row d-flex-justify-content-between mb-50px">
+        <div class="d-flex d-flex-row d-flex-m-column d-flex-justify-content-between mb-50px  mb-m-30px gap-m-20px">
           <div class="position-relative">
             <select
               class="vendors-input major black-bright"
@@ -164,9 +199,26 @@
             />
             <img class="geo-icon" src="assets/images/search.svg" alt="" />
           </div>
+          <div class="position-relative mobile-only">
+            <select
+              class="vendors-input domains major black-bright"
+              name="cat-copy"
+              id=""
+            >
+              <option selected value="all">All domains</option>
+              <option value="cat-1">CAD, Graphics and Multimedia</option>
+              <option value="cat-2">Cloud services</option>
+            </select>
+            <div class="help-text">filter</div>
+            <img
+              class="geo-select-arrow"
+              src="assets/images/geoselectarrow.svg"
+              alt=""
+            />
+          </div>
         </div>
         <div
-          class="d-flex d-flex-row d-flex-justify-content-center gap-10px d-flex-wrap mb-102px ms-50px me-50px"
+          class="d-flex d-flex-row d-flex-justify-content-center gap-10px d-flex-wrap mb-102px mb-m-30px ms-50px me-50px mobile-hide"
         >
           <div class="cat">
             <input checked type="radio" name="cat" id="cat-0" value="all" />
@@ -181,6 +233,7 @@
             <label for="cat-2">Cloud services</label>
           </div>
         </div>
+
         <div class="grid-4-columns mb-50px">
           <div
             class="grid-element filter-item"
@@ -249,21 +302,25 @@
       </div>
       <div class="vendor-modal">
         <div
-          class="container d-flex d-flex-column d-flex-justify-content-center align-items-center"
+          class="container container-m-fluid d-flex d-flex-column d-flex-justify-content-center align-items-center"
         >
-          <div class="vendor-full-details container">
+          <div class="vendor-full-details container container-m-fluid">
             <button class="close-vendor">
               <img src="assets/images/close.svg" alt="" />
             </button>
             <div class="d-flex d-flex-row gap-20px w-100 mb-40px">
               <img
-                class="f-vendor"
+                class="f-vendor mobile-hide"
                 src="assets/images/Rectangle 24.png"
                 alt=""
               />
               <div class="d-flex d-flex-column flex-1">
-                <h2 class="h-1 line-height-200 white mb-5px">HP Inc. </h2>
-                <p class="h-3 mb-20px white">
+                <div class="d-flex d-flex-row align-items-center">
+                  <img class="mobile-only vendor-m-logo" src="assets/images/Rectangle 24.png" alt="">
+                  <h2 class="h-1 line-height-200 white mb-5px mob-h1">HP Inc. </h2>
+                </div>
+                
+                <p class="h-3 mb-20px white partners-m-text mb-m-10px">
                   Partners since <span class="h-2 white">20.20.2020</span>
                 </p>
                 <div class="d-flex d-flex-row d-flex-wrap gap-8px mb-16px">
@@ -277,9 +334,9 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex d-flex-column w-100 mb-50px">
-              <div class="h-2 text-center white mb-10px">About:</div>
-              <div class="two-column-flex">
+            <div class="d-flex d-flex-column w-100 mb-50px mb-m-20px">
+              <div class="h-2 text-center white mb-10px text-m-start">About:</div>
+              <div class="two-column-flex d-flex-m-column gap-m-10px">
                 <div class="column-item major-body white-text">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -298,7 +355,7 @@
                     auctor vehicula elit nec molestie.
                   </p>
                 </div>
-                <div class="column-item">
+                <div class="column-item second-m-column">
                   <div
                     class="d9 d-flex d-flex-column d-flex-justify-content-center"
                   >
@@ -324,7 +381,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="slider-nav">
+                    <div class="slider-nav mt-m-10px mb-m-8px">
                       <button
                         vendor-gallery-swiper
                         class="get-prev border-none p-0 m-0"
@@ -396,7 +453,7 @@
             </div>
             <div class="d-flex d-flex-column w-100 mb-50px">
               <div class="h-2 text-center white mb-20px">Related news:</div>
-              <div class="grid-3-columns mb-50px">
+              <div class="grid-3-columns mb-50px mb-m-0 px-m-25px d-flex-column m-limit-2">
                 <div class="grid-element simple-news">
                   <div class="h-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                   <a class="bordered-button" href="">Read more</a>
@@ -416,10 +473,14 @@
             </div>
           </div>
           <div class="vendor-short-details">
-            <img src="assets/images/Rectangle 24.png" alt="" />
+            <img class="mobile-hide" src="assets/images/Rectangle 24.png" alt="" />
             <div class="d-flex d-flex-column flex-1">
-              <h2 class="h-2 mb-23px white">HEWLETT PACKARD INC</h2>
-              <p class="simple white mb-50px">
+              <div class="d-flex d-flex-row align-items-center mb-m-30px">
+                <img class="mobile-only vendor-m-logo" src="assets/images/Rectangle 24.png" alt="">
+                <h2 class="h-2 mb-23px mb-m-0 white">HEWLETT PACKARD INC</h2>
+              </div>
+              
+              <p class="simple white mb-50px vendor-m-p">
                 HP Inc. provides products, technologies, software, solutions,
                 and services to individual consumers and small- and medium-sized
                 businesses (SMBs), as well as to the government, health, and
@@ -428,7 +489,7 @@
               </p>
               <button
                 show-vendor-full
-                class="bordered-button bg-none cursor-pointer"
+                class="bordered-button bg-none cursor-pointer mx-m-auto"
               >
                 Read more
               </button>
@@ -449,30 +510,32 @@
       "
     >
       <div
-        class="container d-flex d-flex-column position-relative pb-100px mt-88px"
+        class="container d-flex d-flex-column position-relative pb-100px pb-m-50px mt-88px mt-m-35px"
       >
         <div
-          class="position-absolute w-100 top-0 left-0 right-0 d-flex h-100"
-          style="
-            background: url(assets/images/big-t-bottom.png) no-repeat center
-              top/cover;
-            opacity: 0.5;
-            margin-top: 1rem;
-            z-index: 0;
-          "
+          class="position-absolute w-100 top-0 left-0 right-0 d-flex h-100 contacts-background"
         ></div>
-        <div class="position-relative d-flex justify-content-center mb-47px">
-          <div class="h-1 grey-bright text-center w-100 container">
+        <div
+          class="position-relative d-flex justify-content-center mb-47px mb-m-26px"
+        >
+          <div
+            class="h-1 grey-bright text-center w-100 container mob-h1 text-m-start ms-m-0"
+          >
             Contact Us
           </div>
         </div>
-        <div class="d-flex d-flex-row gap-63px" style="z-index: 2">
+        <div
+          class="d-flex d-flex-row d-flex-m-column gap-63px gap-m-22px"
+          style="z-index: 2"
+        >
           <div class="contact-info">
             <div class="contact-row">
               <img src="assets/images/geo-alt.svg" alt="" />
               <div class="d-flex d-flex-column gap-5px">
-                <div class="gilroy-bold">Head Office</div>
-                <div class="gilroy-regular">
+                <div class="gilroy-bold mulish-m fw-600-m lh-125-m">
+                  Head Office
+                </div>
+                <div class="gilroy-regular mulish-m lh-1875-m">
                   73a Langley Park Road Sutton, SM2 5HA, United Kingdom 
                 </div>
               </div>
@@ -480,8 +543,10 @@
             <div class="contact-row">
               <img src="assets/images/geo-alt.svg" alt="" />
               <div class="d-flex d-flex-column gap-5px">
-                <div class="gilroy-bold">Head Office</div>
-                <div class="gilroy-regular">
+                <div class="gilroy-bold mulish-m fw-600-m lh-125-m">
+                  Head Office
+                </div>
+                <div class="gilroy-regular mulish-m lh-1875-m">
                   73a Langley Park Road Sutton, SM2 5HA, United Kingdom 
                 </div>
               </div>
@@ -489,16 +554,18 @@
             <div class="contact-row">
               <img src="assets/images/geo-alt.svg" alt="" />
               <div class="d-flex d-flex-column gap-5px">
-                <div class="gilroy-bold">Head Office</div>
-                <div class="gilroy-regular">
+                <div class="gilroy-bold mulish-m fw-600-m lh-125-m">
+                  Head Office
+                </div>
+                <div class="gilroy-regular mulish-m lh-1875-m">
                   73a Langley Park Road Sutton, SM2 5HA, United Kingdom 
                 </div>
               </div>
             </div>
             <div class="contact-row">
               <img class="my-auto" src="assets/images/telephone.svg" alt="" />
-              <div class="d-flex d-flex-column gap-5px">
-                <div class="gilroy-bold">Telefon</div>
+              <div class="d-flex d-flex-column gap-5px gap-7px-m">
+                <div class="gilroy-bold fw-600-m">Telefon</div>
                 <div class="gilroy-regular">+994 55 213 13 45</div>
                 <div class="gilroy-regular">+994 55 213 13 45</div>
                 <div class="gilroy-regular">+994 55 213 13 45</div>
@@ -506,7 +573,7 @@
             </div>
             <img class="maps-image" src="assets/images/maps.png" alt="" />
             <div class="custom-contact-block">
-              <div class="h-2 contact-info-title grey-100 mb-10px">
+              <div class="h-2 contact-info-title grey-100 mb-10px major-m">
                 Contact our sales team:
               </div>
               <div class="custom-contact-row">
@@ -519,7 +586,7 @@
               </div>
             </div>
             <div class="custom-contact-block">
-              <div class="h-2 contact-info-title grey-100 mb-10px">
+              <div class="h-2 contact-info-title grey-100 mb-10px major-m">
                 Contact our sales team:
               </div>
               <div class="custom-contact-row">
@@ -611,8 +678,10 @@
               </button>
             </form>
             <form class="d-flex d-flex-column" action="">
-              <div class="h-2 grey-100">Subscribe to our newsletter</div>
-              <div class="major grey-100 mb-10px">
+              <div class="h-2 grey-100 major-m mb-m-5px">
+                Subscribe to our newsletter
+              </div>
+              <div class="major grey-100 mb-10px mob-menu">
                 Get interesting updates about us
               </div>
               <div class="form-group mb-10px">
@@ -636,51 +705,54 @@
       </div>
     </section>
     <footer class="container-fluid bg-grey-bright">
-      <div class="container d-flex d-flex-row">
+      <div class="container d-flex d-flex-row d-flex-m-column-reverse gap-m-20px">
         <div class="d-flex d-flex-column gap-20px justify-content-start">
-          <img src="assets/images/Logo-red.svg" alt="" class="logo" />
-          <h6 class="menu-item">
+          <img src="assets/images/Logo-red.svg" alt="" class="logo footer-m-logo" />
+          <h6 class="menu-item max-width-60vw-m">
             Copyright © 2023 TECHPRO DC. All rights reserved
           </h6>
         </div>
-        <ul class="footer-menu">
-          <li>
-            <a class="menu-item text-decoration-none" href="">About us</a>
-          </li>
-          <li>
-            <a class="menu-item text-decoration-none" href="">Vendors</a>
-          </li>
-          <li>
-            <a class="menu-item text-decoration-none" href="">News</a>
-          </li>
-        </ul>
-        <ul class="footer-menu">
-          <li>
-            <a class="menu-item text-decoration-none" href="">About us</a>
-          </li>
-          <li>
-            <a class="menu-item text-decoration-none" href="">Vendors</a>
-          </li>
-          <li>
-            <a class="menu-item text-decoration-none" href="">News</a>
-          </li>
-        </ul>
-        <div class="d-flex d-flex-row gap-10px ms-auto">
-          <a href="">
-            <img
-              class="footer-social-icon"
-              src="assets/images/linkedin.svg"
-              alt=""
-            />
-          </a>
-          <a href="">
-            <img
-              class="footer-social-icon"
-              src="assets/images/instagram-black.svg"
-              alt=""
-            />
-          </a>
+        <div class="d-flex d-flex-row flex-1">
+          <ul class="footer-menu">
+            <li>
+              <a class="menu-item text-decoration-none" href="">About us</a>
+            </li>
+            <li>
+              <a class="menu-item text-decoration-none" href="">Vendors</a>
+            </li>
+            <li>
+              <a class="menu-item text-decoration-none" href="">News</a>
+            </li>
+          </ul>
+          <ul class="footer-menu">
+            <li>
+              <a class="menu-item text-decoration-none" href="">About us</a>
+            </li>
+            <li>
+              <a class="menu-item text-decoration-none" href="">Vendors</a>
+            </li>
+            <li>
+              <a class="menu-item text-decoration-none" href="">News</a>
+            </li>
+          </ul>
+          <div class="d-flex d-flex-row gap-10px ms-auto ">
+            <a href="">
+              <img
+                class="footer-social-icon"
+                src="assets/images/linkedin.svg"
+                alt=""
+              />
+            </a>
+            <a href="">
+              <img
+                class="footer-social-icon"
+                src="assets/images/instagram-black.svg"
+                alt=""
+              />
+            </a>
+          </div>
         </div>
+
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

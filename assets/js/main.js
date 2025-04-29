@@ -55,34 +55,67 @@ document.addEventListener("DOMContentLoaded", function () {
     updateSlides();
   }
 
-  new Swiper(".vendors-slider", {
-    slidesPerView: 4,
-    centeredSlides: true,
-    spaceBetween: 70,
-    loop: true,
-    speed: 500,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
-    navigation: {
+  if (window.innerWidth < 768) {
+    new Swiper(".vendors-slider", {
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: window.innerWidth * 0.062, // 6.2% of window size
+      loop: true,
+      navigation: {
       nextEl: ".get-next[vendors-slider]",
       prevEl: ".get-prev[vendors-slider]",
-    },
-  });
+      },
+      grid: {
+      rows: 2, // Enables two rows
+      fill: 'row',
+      },
+    });
+  } else {
+    new Swiper(".vendors-slider", {
+      slidesPerView: 4,
+      centeredSlides: true,
+      spaceBetween: window.innerWidth * 0.0349, // 3.49% of window size
+      loop: true,
+      speed: 500,
+      autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+      },
+      navigation: {
+      nextEl: ".get-next[vendors-slider]",
+      prevEl: ".get-prev[vendors-slider]",
+      },
+    });
+  }
 
-  new Swiper(".core-values-slider", {
-    slidesPerView: 4,
-    spaceBetween: 21,
-    loop: true,
-    centeredSlides: true,
-    speed: 500,
-    autoplay: false,
-    navigation: {
+
+    new Swiper(".core-values-slider", {
+      slidesPerView: 2,
+      spaceBetween: window.innerWidth * 0.111, // 11.1% of window size
+      loop: true,
+
+      speed: 500,
+      autoplay: false,
+      navigation: {
       nextEl: ".get-next[core-values-slider]",
       prevEl: ".get-prev[core-values-slider]",
-    },
-  });
+      },
+      breakpoints: {
+        // when window width is >= 320px
+        0: {
+          slidesPerView: 1.3,
+          spaceBetween: window.innerWidth * 0.111,
+          centeredSlides: false,
+        },
+        // when window width is >= 640px
+        768: {
+          slidesPerView: 4,
+          spaceBetween: window.innerWidth * 0.014,
+          centeredSlides: true,
+        }
+      }
+    });
+  
 
   new Swiper('.vendor-gallery-swiper', {
     slidesPerView: 1,
@@ -138,6 +171,38 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  const  callMenuButton = document.getElementById("Burger");
+  if(callMenuButton) {
+    const menu = document.querySelector(".burger-menu");
+    if(menu) {
+      callMenuButton.addEventListener("click", () => {
+        menu.classList.toggle("show-menu");
+      });
+    }
+  }
+
+  const closeMenuButton = document.querySelector(".close-mobile-menu");
+  if(closeMenuButton) {
+    closeMenuButton.addEventListener("click", () => {
+      closeMenuButton.closest(".burger-menu").classList.remove("show-menu");
+    });
+  }
+
+  const scrollTo = document.querySelector('.bounce-down');
+  if(scrollTo) {
+    scrollTo.addEventListener('click', () => {
+      const target = document.querySelector('.scroll-to');
+      if (target) {
+        const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+        const headerHeight = document.querySelector('header').offsetHeight;
+        window.scrollTo({
+          top: targetPosition - headerHeight,
+          behavior: 'smooth'
+        });
+      }
+    });
+  }
+
   window.addEventListener("scroll", () => {
     const header = document.querySelector("header");
     if (window.scrollY > 0) {
@@ -152,15 +217,16 @@ document.addEventListener("DOMContentLoaded", function () {
     'input[type="text"][placeholder="Search by name"]'
   );
   const categoryRadios = document.querySelectorAll('input[name="cat"]');
+  const categorySelect = document.querySelector('select[name="cat-copy"]');
   const gridElements = document.querySelectorAll(".filter-item");
 
-  if (countrySelect || searchInput || categoryRadios.length) {
+  if (countrySelect || searchInput || categoryRadios.length || categorySelect) {
     function filterGridElements() {
       const selectedCountry = countrySelect ? countrySelect.value : null;
       const searchQuery = searchInput ? searchInput.value.toLowerCase() : "";
-      const selectedCategory = document.querySelector(
-        'input[name="cat"]:checked'
-      )?.value || "all";
+      const selectedCategory =
+        document.querySelector('input[name="cat"]:checked')?.value ||
+        (categorySelect ? categorySelect.value : "all");
 
       gridElements.forEach((element) => {
         const elementCountries = element
@@ -206,8 +272,24 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     if (categoryRadios.length) {
       categoryRadios.forEach((radio) =>
-        radio.addEventListener("change", filterGridElements)
+        radio.addEventListener("change", () => {
+          if (categorySelect) {
+            categorySelect.value = radio.value; // Sync with categorySelect
+          }
+          filterGridElements();
+        })
       );
+    }
+    if (categorySelect) {
+      categorySelect.addEventListener("change", () => {
+        const correspondingRadio = document.querySelector(
+          `input[name="cat"][value="${categorySelect.value}"]`
+        );
+        if (correspondingRadio) {
+          correspondingRadio.checked = true; // Sync with categoryRadios
+        }
+        filterGridElements();
+      });
     }
   }
 
